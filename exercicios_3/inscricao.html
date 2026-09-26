@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição – Mostra de Tecnologia e Inovação 2026</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <h1 id="titulo-principal">Inscrição – Mostra de Tecnologia e Inovação 2026</h1>
+
+    <form action="" method="post">
+
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <label for="nome">Nome completo</label><br>
+            <input type="text" name="nome_aluno" id="nome" required><br><br>
+
+            <label for="email">E-mail</label><br>
+            <input type="email" name="email_aluno" id="email" required><br><br>
+
+            <label for="data_nascimento">Data de nascimento</label><br>
+            <input type="date" name="data" id="data_nascimento"><br><br>
+
+            <label for="telefone">Telefone</label><br>
+            <input type="tel" name="numero" id="telefone"><br><br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Dados acadêmicos</legend>
+
+            <label for="curso">Curso</label><br>
+            <select name="curso" id="curso">
+                <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                <option value="dsm">Desenvolvimento de Software Multiplataforma</option>
+                <option value="gestao">Gestão Empresarial</option>
+            </select><br><br>
+
+            <p>Período</p>
+
+            <input type="radio" id="manha" name="periodo" value="manha">
+            <label for="manha">Manhã</label><br>
+
+            <input type="radio" id="tarde" name="periodo" value="tarde">
+            <label for="tarde">Tarde</label><br>
+
+            <input type="radio" id="noite" name="periodo" value="noite">
+            <label for="noite">Noite</label><br><br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Áreas de interesse</legend>
+
+            <p>Quais áreas de tecnologia são do seu interesse?</p>
+
+            <input type="checkbox" name="interesse" id="desenvolvimento_web" value="desenvolvimento_web">
+            <label for="desenvolvimento_web">Desenvolvimento Web</label><br>
+
+            <input type="checkbox" name="interesse" id="inteligencia_artificial" value="inteligencia_artificial">
+            <label for="inteligencia_artificial">Inteligência Artificial</label><br>
+
+            <input type="checkbox" name="interesse" id="banco_de_dados" value="banco_de_dados">
+            <label for="banco_de_dados">Banco de Dados</label><br>
+
+            <input type="checkbox" name="interesse" id="desenvolvimento_mobile" value="desenvolvimento_mobile">
+            <label for="desenvolvimento_mobile">Desenvolvimento Mobile</label><br>
+
+            <input type="checkbox" name="interesse" id="seguranca_informacao" value="seguranca_informacao">
+            <label for="seguranca_informacao">Segurança da Informação</label><br><br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Forma de participação</legend>
+
+            <p>Como você participará da Mostra?</p>
+
+            <input type="radio" id="visitante" name="participacao" value="visitante">
+            <label for="visitante">Visitante</label><br>
+
+            <input type="radio" id="apresentador" name="participacao" value="apresentador">
+            <label for="apresentador">Apresentador de projeto</label><br>
+
+            <input type="radio" id="monitor" name="participacao" value="monitor">
+            <label for="monitor">Monitor</label><br><br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Observações</legend>
+
+            <label for="observacao">Observações ou informações adicionais</label><br>
+            <textarea name="observacao" id="observacao" rows="5" cols="48"></textarea>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Desafio</legend>
+
+            <label for="visita">Data em que deseja visitar o evento</label><br>
+            <input type="date" id="visita" name="visita"><br><br>
+
+            <label for="acompanhantes">Número de pessoas que acompanharão você</label><br>
+            <input type="number" id="acompanhantes" name="acompanhantes" min="0" max="5"><br>
+        </fieldset>
+        <br>
+
+        <button type="submit" class="botao">Enviar inscrição</button>
+        <button type="reset" class="botao">Limpar formulário</button>
+
+    </form>
+    <br>
+    <a href="index.html">Voltar para a página inicial</a>
+</body>
+</html>
